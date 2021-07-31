@@ -1,8 +1,8 @@
-let Error404 = {
+let Contato = {
   render: async () => {
     let view = `
       <div>
-        <h1>Error404</h1>
+        <h1>Contato</h1>
       </div>
     `
     return view
@@ -10,4 +10,4 @@ let Error404 = {
   after_render: async () => {}
 }
 
-export default Error404;
+export default Contato;

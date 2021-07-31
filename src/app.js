@@ -1,11 +1,13 @@
 import Home from './view/page/Home';
+import Contato from './view/page/Contato'
 import Error404 from './view/page/Error404';
 
 import Untils from './service/Untils';
 
 // rotas
 let routes = {
-  '/': Home
+  '/': Home,
+  '/contato': Contato,
 }
 
 const router = async () => {
@@ -13,8 +15,8 @@ const router = async () => {
 
   let request = Untils.parseRequestURL();
 
-  let parseURL = (request.resource ? '/' + request.resource : '/') + (request.verb ? '/' + request.verb : '')
-  let page = routes[parseURL] ? routes[parseURL] : error404;
+  let parseURL = (request.resource ? '/' + request.resource : '/') + (request.verb ? '/' + request.verb : '');
+  let page = routes[parseURL] ? routes[parseURL] : Error404;
 
   root.innerHTML = await page.render();
   await page.after_render();

@@ -9,3 +9,5 @@ let Home = {
   },
   after_render: async () => {}
 }
+
+export default Home;
