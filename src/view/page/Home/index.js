@@ -15,7 +15,6 @@ let Home = {
     button.addEventListener('click', () => {
       alert('Tudo certo')
     })
-
   }
 }
 
