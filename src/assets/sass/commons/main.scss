@@ -1,4 +1,13 @@
+$branco: #fff;
+
 *{
   margin: 0;
   padding: 0;
+  background: red;
+  color: $branco;
+}
+
+.container{
+  width: 80%;
+  margin: auto;
 }
